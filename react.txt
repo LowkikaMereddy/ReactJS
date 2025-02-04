@@ -1,0 +1,70 @@
+components in react
+------------------------
+--> component are basic building blocks in react.
+--> components are reusable
+
+two-types
+1) class-based component
+   > It is a es6 class in js
+   > It uses render() method
+   > render() is used to render elements/component on the web-page
+   > It uses react-life-cycle
+   > It is statefull component
+   > constructor is used to data
+   > It uses extend keyword
+
+import React from 'React'
+class demo extend React.Component {
+      render(){
+       return  <h1>iam class based component</h1>
+       }
+}
+export default demo;
+
+2) function-based component/presentational component/dumb component
+   > It is a js pure function
+   > It doesn't have any react-life-cycle
+   > It doesn't uses render() method
+   > It is a stateless component
+     after react 16.8 FBC becomes statefull component because of hooks
+     > no need of using constructor and extend keyword
+
+ex:
+import React from 'react'
+
+function demo()
+{
+  return <h1> iam function based component</h1>
+}
+export default demo1;
+
+ex: most preferred
+import React from 'react'
+let demo2 = () => {
+  return <h1> iam function based component</h1>
+}
+export default demo1;
+
+let h1 = document.createElement("h1")
+console.log(h1)
+h1.textContent = "hello-world"
+
+3)React
+1)using React.createElement("tag-name" , "null or (id : 
+
+Pops in React:
+-----------------
+-->Pops stands for properties.
+-->props are used to send data from one compoment to another.
+-->props are uni-direction
+-->props are object
+-->props are immutable (read-only)
+
+State in React:
+-----------------
+--> state is use to store the date in the same component and update the data in the same component.
+--> states are mutable (can be react-write)
+
+syntax:
+
+let [inital-value , function] = useState(inital-value)
